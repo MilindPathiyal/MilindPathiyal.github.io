@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+<head>
+	<meta charset="utf-8">
+	<title>Milind Paliath-Pathiyal</title>
+
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.png">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+
+<body id="mybody" class="default">
+
+	<div class="main">
+
+		<!--navigation bar-->
+		<ul class="mainnav initial" id="mynav" >
+			<li><a class="logo" href="javascript:void(0);" onclick="clickDropdownItem();scrollToAnchor('home')">MP</a></li>
+			<div class="nav-right">
+				<li class="right-items"><a class="dropdown" href="javascript:void(0);" onclick="clickDropdownItem();scrollToAnchor('about');">About Me</a></li>
+				<li class="right-items"><a class="dropdown" href="javascript:void(0);" onclick="clickDropdownItem();scrollToAnchor('projects');">Portfolio</a></li>
+			</div>
+			<li class="icon">
+    		<a href="javascript:void(0);" style="font-size:15px;" onclick="screenAdjust();">☰</a>
+    	</li>
+
+		</ul>
+		<!-- /navigation bar -->
+	</div>
+
+
+	<!-- HOME SECTION -->
+	<a class="anchor" name="home"></a>
+	<div id="home-div" class="section-home" style="background-color: transparent;">
+
+		<div style="position:absolute;width: 100%; padding-top:35vh;z-index: 0;">
+
+			<h1 class="hometext">Milind Paliath-Pathiyal</h1>
+			<h2 class="hometext">—</h2>
+			<p class="hometext">Engineering Student&nbsp;
+				<i class="fa fa-code home-title" style="font-size:24px;color:lightblue;font-weight: bold;"></i>
+				&nbsp;Computer Vision and ML Enthusiast&nbsp;
+		</div>
+
+		<canvas id="mycanvas"></canvas>
+
+
+	</div>
+
+
+	<!-- ABOUT SECTION -->
+	<div class="about-container">
+		<a class="anchor" name="about" style="padding-top: 65px"></a>
+		<div class="section-about" >
+
+			<h1 class="abouttext title">About Me</h1>
+			<h2 class="abouttext title">—</h2>
+
+			<table style="width:100%">
+				<tr>
+					<td class="left-section">
+						<h2 class="abouttext" style="text-align: left;">Hi, I'm
+							<span style="color:#2B84B5;font-size:28px; display:inline-block">
+								Milind
+							<span>
+						</h2>
+
+						<hr class="divider">
+
+
+						<p class="abouttext">
+							<span class="abt_Label">
+								Education
+							</span>
+							<span class="abt_Content">
+								3A Undergraduate Student<br>
+								Systems Design Engineering<br>
+								University of Waterloo<br>
+								Class of 2022
+							</span>
+						</p>
+						<p class="abouttext">
+							<span class="abt_Label">
+								Email
+							</span>
+							<span class="abt_Content">
+								mpaliath@uwaterloo.ca
+							</span>
+						</p>
+						<p class="abouttext">
+							<span class="abt_Label">
+								City
+							</span>
+							<span class="abt_Content">
+								San Jose, CA
+							</span>
+						</p>
+
+
+
+						<h2 class="abouttext" style="padding-top:15px;text-align:left;font-size:20px">My Skills</h2>
+						<hr class="divider" style="margin-bottom:10px">
+
+						<p class="skillset">
+							<span class="skl_Label">Languages</span>
+
+
+								<span  class="skl_Content">
+									<span>
+										<a class="skill languages">Python</a>
+										<a class="skill languages">C++</a>
+										<a class="skill languages">Java</a>
+										<a class="skill languages">Swift</a>
+									</span>
+
+									<span style="display:inline-block">
+										<a class="skill web">HTML</a>
+										<a class="skill web">C</a>
+										<a class="skill web">Javascript</a>
+										<a class="skill web">SQL</a>
+									</span>
+								</span>
+							</span>
+						</p>
+
+						<p class="skillset">
+							<span class="skl_Label" id="web">Tools</span>
+
+
+							<span style="display:inline-block">
+								<span class="skl_Content">
+									<a class="skill design">Jupyter Notebook</a>
+									<a class="skill design">Tensorflow</a>
+									<a class="skill design">Sci-kit Learn</a>
+									<a class="skill design">PySpark</a>
+									<a class="skill design">Hadoop</a>
+									<a class="skill design">Plotly</a>
+									<a class="skill design">Grafana</a>
+								</span>
+							</span>
+						</p>
+
+
+
+
+						<br/>
+
+					</td>
+
+					<td class="right-section">
+
+							<h3 class="abouttext">Around the web</h3>
+
+
+							<p class="links">
+			    				<a id="github" class="link" href="https://github.com/milindpathiyal" target="_blank">
+			    					<i class="fa fa-github"></i>
+		    					</a>
+
+									<a id="linkedin" class="link" href="https://www.linkedin.com/in/milind-p-127988122" target="_blank">
+										<i class="fa fa-linkedin"></i>
+									</a>
+		    				</p>
+
+
+							<h3 class="abouttext">Interests</h3>
+
+
+							<p class="interests">
+
+
+								<a id="sports" class="interest"><i class="fa fa-futbol-o"></i></a>
+								<a id="lift" class="cinterest"><i class="icon-lift"></i></a>
+
+								<span style="display:inline-block">
+									<a id="gaming" class="interest"><i class="fa fa-gamepad"></i></a>
+									<a id="music-spotify" class="interest"><i class="fa fa-music"></i></a>
+								</span>
+
+							</p>
+
+
+					</td>
+
+				</tr>
+			</table>
+			<p class="abouttext" style="text-align:center;padding-top:25px">
+				I am in the search for a 2020 fall co-op internship. Let me know if you want me on your team!
+				<br/>
+				<br/>
+
+				<a class="resume-link" target="_blank" href="res/Resume1.pdf">View Résumé</a>
+
+			</p>
+
+
+
+		</div>
+	</div>
+
+
+
+	<!-- PORTFOLIO SECTION -->
+	<a class="anchor" name="projects"></a>
+	<div class="section-projects">
+
+		<h1 class="projectstext title">Portfolio</h1>
+		<h2 class="projectstext title">—</h2>
+
+
+		<!-- GRID -->
+	  <div class="grid-row"  href="#projects">
+
+	  	<!-- Apple ITEM -->
+	  	<div id="apple" class="grid-item">
+	  		<div class="media-container">
+	  			<img src="res/apple.png" alt="apple">
+	  		</div>
+	  		<div class="filter"></div>
+	    	<a id="apple-link" class="moreinfo">
+					<i class="fa fa-search-plus"></i>
+	    	</a>
+	    	<span class="skills-used">
+	    		<a class="skill languages" style="">Swift</a>
+    			<a class="skill web">Xcode</a>
+	    	</span>
+	    	<span class="short-detail">
+	    		<b>My iOS Apps</b>
+	    		<br/>
+	    		ARKit, CoreML, SceneKit, SpriteKit
+	   		</span>
+	    </div>
+
+			<!-- Tumor ITEM -->
+			<div id="tumor" class="grid-item">
+	  		<div class="media-container">
+	  			<img src="res/tumor.png" alt="tumor">
+	  		</div>
+	  		<div class="filter"></div>
+	    	<a id="tumor-link" class="moreinfo">
+					<i class="fa fa-search-plus"></i>
+	    	</a>
+	    	<span class="skills-used">
+	    		<a class="skill languages" style="">Python</a>
+    			<a class="skill web">Tensorflow</a>
+	    	</span>
+	    	<span class="short-detail">
+	    		<b>ML Image Classifier</b>
+	    		<br/>
+	    		Tensorflow, Keras
+	   		</span>
+	    </div>
+
+			<!-- House ITEM -->
+			<div id="house" class="grid-item">
+	  		<div class="media-container">
+	  			<img src="res/house.png" alt="tumor">
+	  		</div>
+	  		<div class="filter"></div>
+	    	<a id="house-link" class="moreinfo">
+					<i class="fa fa-search-plus"></i>
+	    	</a>
+	    	<span class="skills-used">
+	    		<a class="skill languages" style="">Python</a>
+    			<a class="skill web">Tensorflow</a>
+	    	</span>
+	    	<span class="short-detail">
+	    		<b>Kaggle Competition Notebook</b>
+	    		<br/>
+	    		Tensorflow, XGBoost
+	   		</span>
+	    </div>
+
+			<!-- Kaggle  ITEM -->
+	    <div id="kaggle" class="grid-item">
+	    	<div class="media-container">
+	  			<img src="res/kaggle.png" alt="kaggle">
+	  		</div>
+	  		<div class="filter"></div>
+	      <a id="kaggle-link" class="moreinfo">
+					<i class="fa fa-search-plus"></i>
+	    	</a>
+				<span class="skills-used">
+	    		<a class="skill languages" style="">Python</a>
+    			<a class="skill web">Tensorflow, Keras</a>
+	    	</span>
+	    	<span class="short-detail">
+    			<b>My Kaggle Notebooks</b>
+    			<br/>
+					Keras, XGBoost, Random Forrest
+	   		</span>
+	    </div>
+
+			<!-- Patent ITEM -->
+			 <div id="patent" class="grid-item">
+				 <div class="media-container">
+					 <img src="res/patent.png" alt="patent">
+				 </div>
+				 <div class="filter"></div>
+				 <a id="patent-link" class="moreinfo">
+					 <i class="fa fa-search-plus"></i>
+				 </a>
+				 <span class="short-detail">
+					 <b>My Bicycle Safety Device</b>
+					 <br/>
+					 Patent
+				 </span>
+			 </div>
+
+			 <!-- Tri ITEM -->
+ 			 <div id="tri" class="grid-item">
+ 				 <div class="media-container">
+ 					 <img src="res/trilateration.png" alt="tri">
+ 				 </div>
+ 				 <div class="filter"></div>
+ 				 <a id="tri-link" class="moreinfo">
+ 					 <i class="fa fa-search-plus"></i>
+ 				 </a>
+ 				 <span class="short-detail">
+ 					 <b>My Indoor Localization Algorithm</b>
+ 					 <br/>
+ 					 Trilaterion
+ 				 </span>
+ 			 </div>
+
+			 <!-- Robotics ITEM -->
+ 			 <div id="robotics" class="grid-item">
+ 				 <div class="media-container">
+ 					 <img src="res/robotics.png" alt="robotics">
+ 				 </div>
+ 				 <div class="filter"></div>
+ 				 <a id="robotics-link" class="moreinfo">
+ 					 <i class="fa fa-search-plus"></i>
+ 				 </a>
+ 				 <span class="short-detail">
+ 					 <b>Robotics</b>
+ 					 <br/>
+ 					 FirstTechChallenge
+ 				 </span>
+ 			 </div>
+
+		</div>
+	</div>
+
+
+
+
+<!-- Divider -->
+	<div class="modal-left">
+		<a class="modal-control">
+			<i class="fa fa-chevron-left"></i>
+		</a>
+	</div>
+
+	<div class="modal-right">
+		<a class="modal-control">
+			<i class="fa fa-chevron-right"></i>
+		</a>
+	</div>
+<!-- Divider -->
+
+
+
+	<!-- Apple Modal -->
+	<div id="apple-modal" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <div class="modal-title">My iOS Apps</div>
+	    <div class="modal-media">
+	    		<div>
+				    <img src="res/apple.png" alt="apple">
+					</div>
+			</div>
+			<div class="modal-desc">
+				<span class="skills-used">
+		  		<a class="skill languages" style="">Swift</a>
+					<a class="skill web">Xcode</a>
+		  	</span>
+		  	<p style="color:black;">
+					I've have had 3 years of Swift experience, 5 personal iOS apps (2 of which available on Apple App Store).
+					I'm familiar with concepts of UIKit, ARKit, CoreML, SceneKit and SpriteKit.
+		  	</p>
+		  	<div style="color:black;text-align:center">
+	  			Click the link below to see the source code on GitHub.
+	  		</div>
+				<a class="github-source"
+				href="https://github.com/milindpathiyal"
+				target="_blank">
+					<i class="fa fa-github"></i>
+				</a>
+		  </div>
+	  </div>
+	</div>
+
+	<!-- Tumor Modal -->
+	<div id="tumor-modal" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <div class="modal-title">ML Image Classifier</div>
+	    <div class="modal-media">
+	    		<div>
+				    <img src="res/tumor.png" alt="tumor">
+					</div>
+			</div>
+			<div class="modal-desc">
+				<span class="skills-used">
+		  		<a class="skill languages" style="">Python</a>
+					<a class="skill web">Tensorflow, Keras</a>
+		  	</span>
+		  	<p style="color:black;">
+					The objetive was to build an algorithm to automatically identify whether a
+					patient is suffering from breast cancer or not by looking
+					at biopsy images. The algorithm had to be extremely accurate
+					because lives of people is at stake.
+
+					The deeper we go into the CNN, the more filters we use to detect
+					high-level features of each biopsy image
+
+					Implemented ReduceLROnPlateau to improve accuracy
+		  	</p>
+		  	<div style="color:black;text-align:center">
+	  			Click the link below to see my source code on GitHub.
+	  		</div>
+				<a class="github-source"
+				href="https://github.com/milindpathiyal/Breast-Cancer-Image-Classification"
+				target="_blank">
+					<i class="fa fa-github"></i>
+				</a>
+		  </div>
+	  </div>
+	</div>
+
+	<!-- House Modal -->
+	<div id="house-modal" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <div class="modal-title">House Sale Predictor</div>
+	    <div class="modal-media">
+	    		<div>
+				    <img src="res/house.png" alt="tumor">
+					</div>
+			</div>
+			<div class="modal-desc">
+				<span class="skills-used">
+		  		<a class="skill languages" style="">Python</a>
+					<a class="skill web">Tensorflow, XGBoost</a>
+		  	</span>
+		  	<p style="color:black;">
+					Data exploration on predicting sales prices and practice feature engineering,
+					RFs, and gradient boosting
+		  	</p>
+		  	<div style="color:black;text-align:center">
+	  			Click the link below to see my source code on GitHub.
+	  		</div>
+				<a class="github-source"
+				href="https://github.com/milindpathiyal/Housing-Prices-Competition-for-Kaggle-Learn-Users"
+				target="_blank">
+					<i class="fa fa-github"></i>
+				</a>
+		  </div>
+	  </div>
+	</div>
+
+	<!-- Kaggle Modal -->
+	<div id="kaggle-modal" class="modal">
+	   <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <div class="modal-title">Kaggle</div>
+	    <div class="modal-media">
+	    		<div>
+				    <img src="res/kaggle.png" alt="kaggle">
+					</div>
+			</div>
+			<div class="modal-desc">
+				<span class="skills-used">
+					<a class="skill languages" style="">Python</a>
+					<a class="skill web">Tensorflow</a>
+		  	</span>
+				<p style="color:black;">
+					I have begun my quest on using ML on practical applications by practicing with Kaggle kernals.
+					My notebooks contain data exploration, image classification, and competition notebooks.
+					My most recent completed notebook includes a breast cancer biopsy image classification that resulted with 96.41% accuracy.
+					My current project involves image classification via 4k video frames.
+		  	</p>
+		  	<div style="color:black;text-align:center;">
+	  			Click the link below to see more of my Kaggle work on GitHub.
+	  		</div>
+				<a class="github-source"
+				href="https://github.com/milindpathiyal"
+				target="_blank">
+					<i class="fa fa-github"></i>
+				</a>
+		  </div>
+	  </div>
+	</div>
+
+	<!-- Patent Modal -->
+	<div id="patent-modal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="modal-title">My Patent</div>
+			<div class="modal-media">
+					<div>
+						<img src="res/patent.png" alt="patent">
+					</div>
+			</div>
+			<div class="modal-desc">
+				<p style="color:black;">
+					I was inspired to innovate smart device to prevent the increasing count of vehicle-bike collisions in hometown.
+					The device connects to bicycle seat; prevents hit-n-runs and provides visual aid for vehicle drivers.
+				</p>
+			<p style="color:black;text-align:center;padding-top:25px;">
+				Bicycle safety patent figures and document available below
+				<br/>
+				<br/>
+				<a class="patent-link" target="_blank" href="res/patent.pdf">View Patent</a>
+				<a class="figs-link" target="_blank" href="res/figs.pdf">View Figures</a>
+			</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Tri Modal -->
+	<div id="tri-modal" class="modal">
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="modal-title">My localization method using trilateration </div>
+			<div class="modal-media">
+					<div>
+						<img src="res/trilateration.png" alt="tri">
+					</div>
+			</div>
+			<div class="modal-desc">
+				<p style="color:black;">
+					I am in the process of creating my own alorithm for indoor localization using Apollonian Circle Theorem.
+					Code will be available soon...
+					</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Robotics Modal -->
+	<div id="robotics-modal" class="modal">
+		 <!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div class="modal-title">Robotics</div>
+			<div class="modal-media">
+					<div>
+						<img src="res/robotics.png" alt="robotics">
+					</div>
+			</div>
+			<div class="modal-desc">
+				<span class="skills-used">
+					<a class="skill languages" style="">Python</a>
+					<a class="skill web">Tensorflow</a>
+				</span>
+				<p style="color:black;">
+					Founded FTC team #9097 in 2014. In FTC, Teams are responsible for designing, building, and programming their robots in a 10-week build period to compete in an alliance format against other teams. My team and I have constructed and coded 5 robots in 4 years.
+					Throughout those years, I have switched from software lead to hardware lead and teaching new members of the team. I am self-taught on the in's and out's of robotization.
+				</p>
+			</div>
+		</div>
+	</div>
+
+
+
+	<a class="anchor1" name="contact"></a>
+	<div class="section-contact">
+
+			<h1 class="contacttext">Contact</h1>
+			<h2 class="contacttext">—</h2>
+
+
+
+			<div id="map" style="width:100%;height:300px;"></div>
+
+
+			<p class="contacttext" style="text-align:left;display:inline-block;" >
+				<span id="maplocation">
+					<a style="font-size:20px;"">
+						<i class="fa fa-map-marker" style="width:20px;text-align:center"></i>
+					</a>
+					&nbsp;Waterloo, ON
+				</span>
+				<br/>
+				<a style="font-size:20px">
+					<i class="fa fa-envelope-o"></i>
+				</a>
+				&nbsp;mpaliath@uwaterloo.ca
+			</p>
+
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhbHJXl-qdenW-1tL2rKDOxtmHxBZsA8A&callback=myMap">
+	</script>
+
+</body>
+</html>
